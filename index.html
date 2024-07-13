@@ -5,37 +5,39 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>World Clock</title>
     <link rel="stylesheet" href="src/style.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.30.1/moment.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment-timezone/0.5.45/moment-timezone-with-data-10-year-range.js"></script>
   </head>
   <body>
     <div class="container">
       <h1>World Clock</h1>
-
-      <select>
-        <option value="">Select a city..</option>
-        <option value="">London</option>
-        <option value="">New York</option>
-        <option value="">Auckland</option>
+      <select id="city">
+        <option value="">Select a city...</option>
+        <option value="Europe/London">London</option>
+        <option value="America/New_York">New York</option>
+        <option value="Pacific/Auckland">Auckland</option>
       </select>
-
-      <div class="city">
-        <div>
-          <h2>Durban</h2>
-          <div class="date">August 15th 2022</div>
+      <div id="cities">
+        <div class="city" id="durban">
+          <div>
+            <h2>Durban</h2>
+            <div class="date">August 15th 2022</div>
+          </div>
+          <div class="time">1:48:15 <small>AM</small></div>
         </div>
-        <div class="time">1:48:15 <small> AM </small></div>
-      </div>
-      <div class="city">
-        <div>
-          <h2>CapeTown</h2>
-          <div class="date">August 15th 2022</div>
+        <div class="city" id="capetown">
+          <div>
+            <h2>Cape Town</h2>
+            <div class="date">August 15th 2022</div>
+          </div>
+          <div class="time">1:48:15 <small>AM</small></div>
         </div>
-        <div class="time">1:48:15 <small> AM </small></div>
       </div>
     </div>
     <footer>
       Coded by Sibusisiwe Cumbi and is open sourced on
       <a href="https://github.com/Sibusisiwe-C" target="_blank">Github</a>.
     </footer>
+    <script src="src/index.js"></script>
   </body>
-  <script src="src/index.js" target></script>
 </html>
